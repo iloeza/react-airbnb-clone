@@ -39,7 +39,7 @@ export const NavLogin = () => {
     return (
         <ContainerNav>
             <div>
-                <a href="!#"> Hazte anfitrión </a>
+                <a href="!#"> Become a host</a>
             </div>
 
             <div>
@@ -55,14 +55,14 @@ export const NavLogin = () => {
                     <a
                         href="!#"
                     >
-                        <HamburguerMenu className="fas fa-bars"></HamburguerMenu>
+                        <HamburguerMenu className="fas fa-bars"> </HamburguerMenu>
                     </a>
                 </div>
                 <div>
                     <a
                         href="!#"
                     >
-                        <User className="fas fa-user-circle"></User>
+                        <User className="fas fa-user-circle"> </User>
                     </a>
                 </div>
             </Nav>

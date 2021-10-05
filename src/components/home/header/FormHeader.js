@@ -2,7 +2,7 @@ import React from 'react';
 
 import styled from 'styled-components';
 
-const Formularie = styled.form`
+const Form = styled.form`
     margin: 3rem auto 2rem auto;
     background-color: #ffffff;
     border-radius: 5rem;
@@ -16,7 +16,7 @@ const Formularie = styled.form`
         padding: 0;
     }
 `;
-const Campo = styled.div`
+const Countryside = styled.div`
     display: flex;
     padding: .6rem 1rem;
     flex-direction: column;
@@ -65,44 +65,44 @@ const Button = styled.button`
     }
 `;
 
-export const Form = () => {
+export const FormHeader = () => {
     return (
-        <Formularie>
-            <Campo>
-                <Label htmlFor="ubicacion"> Ubicación </Label>
+        <Form>
+            <Countryside>
+                <Label htmlFor="ubicacion"> Location </Label>
                 <Input 
                     type="text" 
                     id="ubicacion" 
                     placeholder="¿A donde viajas?" 
                 />
-            </Campo>
+            </Countryside>
 
-            <Campo>
-                <Label htmlFor="llegada"> Llegada </Label>
+            <Countryside>
+                <Label htmlFor="llegada"> Arrival </Label>
                 <Input 
                     type="date" 
                     id="llegada"
                 />
-            </Campo>
+            </Countryside>
 
-            <Campo>
-                <Label htmlFor="salida"> Salida </Label>
+            <Countryside>
+                <Label htmlFor="salida"> Departure </Label>
                 <Input 
                     type="date" 
                     id="salida" 
                 />
-            </Campo>
+            </Countryside>
 
-            <Campo>
-                <Label htmlFor="huespedes"> Huéspedes </Label>
+            <Countryside>
+                <Label htmlFor="huespedes"> Guests </Label>
                 <Input 
                     type="number" 
                     id="huespedes" 
                     placeholder="¿Cuantos?" 
                 />
-            </Campo>
+            </Countryside>
 
-            <Campo>
+            <Countryside>
                 <Button
                     type="submit" 
                 > 
@@ -112,7 +112,7 @@ export const Form = () => {
                         <i className="fas fa-search"></i>
                     </a>
                 </Button>
-            </Campo>
-        </Formularie>
+            </Countryside>
+        </Form>
     )
 };

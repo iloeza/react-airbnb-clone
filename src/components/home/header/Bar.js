@@ -33,16 +33,20 @@ export const Bar = () => {
     return (
         <ContainerBar>
             <div>
-                <Img 
-                    src={ logo }
-                    alt="logo airbnb"
-                />
+                <a
+                    href="!#"
+                >
+                    <Img 
+                        src={ logo }
+                        alt="logo airbnb"
+                    />
+                </a>
             </div>
 
             <Nav>
-                <a href="!#"> Lugares para hospedarte </a>
-                <a href="!#"> Experiencias </a>
-                <a href="!#"> Experiencias en linea </a>
+                <a href="!#"> Places to stay </a>
+                <a href="!#"> Experiences </a>
+                <a href="!#"> Online experiences </a>
             </Nav>
 
             <NavLogin />

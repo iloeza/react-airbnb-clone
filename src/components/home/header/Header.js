@@ -1,10 +1,9 @@
 import React from 'react';
 import { Bar } from './Bar';
-import { Form } from './Form';
+import { FormHeader } from './FormHeader';
 
 import styled from 'styled-components';
 
-// imagen de fondo
 import hero from '../../../images/header.jpg';
 
 const Hero = styled.header`
@@ -14,7 +13,6 @@ const Hero = styled.header`
     padding: 0 0 20rem 0;
     position: relative;
 
-    // inserta el background negro de fondo
     &::before {
         content: '';
         background-color: #000000;
@@ -27,7 +25,6 @@ const Hero = styled.header`
     }
 `;
 const Contenido = styled.div`
-    // para que traiga el contenido frente del bacground
     position: relative;
 `;
 const TextCovid = styled.div`
@@ -50,7 +47,7 @@ export const Header = () => {
                     <a
                         href="!#"
                     >
-                        Conoce las últimas novedades sobre las medidas que estamos tomando ante el coronavirus
+                        Find out the latest news about the measures we are taking against the coronavirus
                     </a>
                 </TextCovid>
 
@@ -58,7 +55,7 @@ export const Header = () => {
 
                     <Bar />
 
-                    <Form />
+                    <FormHeader />
                 </div>
             </Contenido>
         </Hero>
