@@ -1,39 +1,10 @@
 import React from 'react';
 
-import styled from 'styled-components';
-
-const ContainerNav = styled.nav`
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-
-    a {
-        color: #ffffff;
-        font-weight: 900;
-    }
-    i {
-        color: #ffffff;
-    }
-`;
-const Nav = styled.div`
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: .6rem;
-    border-radius: 2rem;
-
-    i {
-        color: #000000;
-    }
-`;
-const HamburguerMenu = styled.i`
-    font-size: 1rem;
-`; 
-const User = styled.i`
-    font-size: 1.7rem;
-`;
-
+import { ContainerNav, 
+        Nav, 
+        HamburguerMenu, 
+        User 
+} from '../../styles/bar/NavLoginStyled';
 
 export const NavLogin = () => {
     return (

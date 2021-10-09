@@ -1,33 +1,11 @@
 import React from 'react';
-import { NavLogin } from './NavLogin';
 
-import styled from 'styled-components';
+import { ContainerBar, Img, Nav } from '../../styles/bar/BarStyled';
+
+import { NavLogin } from './NavLogin';
 
 import logo from '../../../images/airbnb.svg';
 
-const ContainerBar = styled.div`
-    margin-top: 2rem;
-    display: none;
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-`;
-const Img = styled.img`
-    width: 7rem;
-`;
-const Nav = styled.nav`
-    @media screen and (min-width: 768px) {
-        display: flex;
-        gap: 4rem;
-    }
-    a {
-        color: #ffffff;
-        font-weight: 900;
-    }
-`;
 
 export const Bar = () => {
     return (
@@ -52,5 +30,5 @@ export const Bar = () => {
             <NavLogin />
             
         </ContainerBar>
-    )
-}
+    );
+};
