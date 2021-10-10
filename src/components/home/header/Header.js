@@ -4,6 +4,7 @@ import { Hero, Contenido, TextCovid } from '../../styles/header/HeaderStyled';
 
 import { Bar } from './Bar';
 import { FormHeader } from './FormHeader';
+import FlexSearch from './FlexSearch';
 
 
 export const Header = () => {
@@ -23,6 +24,7 @@ export const Header = () => {
                     <Bar />
 
                     <FormHeader />
+                    <FlexSearch />
                 </div>
             </Contenido>
         </Hero>
