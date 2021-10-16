@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+import {
+    devices,
+} from '../../styles/mediaqueries/MediaQueriesStyled';
+
 export const H2 = styled.h2`
     margin: 0;
     padding: 1rem 0;
@@ -9,21 +13,23 @@ export const H2 = styled.h2`
 export const AccommodationContainer = styled.div`
     display: grid;
     grid-template-columns: repeat( 2, 1fr );
+    column-gap: 1rem;
 
     img {
         border-radius: .7rem;
     }
     
-    @media (min-width: 768px) {
+    ${ devices.tablet`
         grid-template-columns: repeat( 3, 1fr );
     
         img {
             width: 4rem;
         }
-    }
-    @media (min-width: 992px) {
+    `}
+
+    ${ devices.laptop`
         grid-template-columns: repeat( 4, 1fr );
-    }
+    `}
 `;
 
 export const  AccommodationBox = styled.div`
@@ -31,18 +37,18 @@ export const  AccommodationBox = styled.div`
     flex-direction: column;
     align-items: center;
 
-    @media (min-width: 768px) {
+    ${ devices.tablet`
         flex-direction: row;
-    }
+    `}
 
     a {
         margin-top: 1rem;
         color: black;
-    
-        @media (min-width: 768px) {
+
+        ${ devices.tablet`
             display: flex;
             gap: 1rem;
-        }
+        `}
     }
 `;
 
@@ -56,10 +62,11 @@ export const Info = styled.div`
     .horas {
         font-size: 1rem;
     }
-    @media (min-width: 768px) {
+
+    ${ devices.tablet`
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: left;
-    }
+    `}
 `;
