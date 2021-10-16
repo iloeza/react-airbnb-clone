@@ -19,7 +19,7 @@ import valladolid from '../../../images/valladolid.jpg'
 export const Accommodation = () => {
     return (
         <div className="container">
-            <H2> Descubre alojamientos cerca de ti </H2>
+            <H2> Discover accommodations near you </H2>
 
             <AccommodationContainer>
                 <AccommodationBox>
