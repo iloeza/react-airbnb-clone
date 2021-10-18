@@ -18,6 +18,7 @@ export const FlexSearchButton = styled.div`
   background-color: white;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 
   &::before {
     content: " ";
@@ -37,10 +38,9 @@ export const FlexSearchButton = styled.div`
   }
 
   & span {
-    background: rgba(0, 0, 0, 0)
-      linear-gradient(90deg, rgb(111, 1, 156) 0%, rgb(198, 1, 126) 135.12%)
-      repeat scroll 0% 0% padding-box text !important;
+    background: linear-gradient(90deg, #6f019c 0%, #c6017e 135.12%) !important;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+    -webkit-background-clip: text !important;
   }
 `;
