@@ -4,15 +4,13 @@ import {
   FlexSearchButton,
 } from "../../styles/header/FlexSearch.styled";
 
-const FlexSearch = () => {
+export const FlexSearch = () => {
   return (
     <FlexSearchContainer>
-      <h3>¿No sabes a dónde ir? ¡No importa!</h3>
+      <h3>You don't know where to go? No problem!</h3>
       <FlexSearchButton>
-        <span>Búsqueda Flexible</span>
+        <span>Flexible Search</span>
       </FlexSearchButton>
     </FlexSearchContainer>
   );
 };
-
-export default FlexSearch;

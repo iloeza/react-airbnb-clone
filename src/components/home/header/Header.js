@@ -1,32 +1,29 @@
-import React from 'react';
+import React from "react";
 
-import { Hero, Contenido, TextCovid } from '../../styles/header/HeaderStyled';
+import { Hero, Contenido, TextCovid } from "../../styles/header/HeaderStyled";
 
-import { Bar } from './Bar';
-import { FormHeader } from './FormHeader';
-import FlexSearch from './FlexSearch';
-
+import { Bar } from "./Bar";
+import { FormHeader } from "./FormHeader";
+import { FlexSearch } from "./FlexSearch";
 
 export const Header = () => {
-    return (
-        <Hero>
-            <Contenido>
-                <TextCovid>
-                    <a
-                        href="!#"
-                    >
-                        Find out the latest news about the measures we are taking against the coronavirus
-                    </a>
-                </TextCovid>
+  return (
+    <Hero>
+      <Contenido>
+        <TextCovid>
+          <a href="!#">
+            Find out the latest news about the measures we are taking against
+            the coronavirus
+          </a>
+        </TextCovid>
 
-                <div className="container">
+        <div className="container">
+          <Bar />
 
-                    <Bar />
-
-                    <FormHeader />
-                    <FlexSearch />
-                </div>
-            </Contenido>
-        </Hero>
-    )
+          <FormHeader />
+          <FlexSearch />
+        </div>
+      </Contenido>
+    </Hero>
+  );
 };
